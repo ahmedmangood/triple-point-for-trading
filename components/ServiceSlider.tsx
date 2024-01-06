@@ -37,15 +37,15 @@ function ServiceSlider() {
       <h2 className="text-center font-bold text-xl py-10 lg:text-3xl text-orange-400">
         Services and Products we provide
       </h2>
-      <div className="h-56 sm:h-64 xl:h-80 2xl:h-96 border-2 border-gray-300 rounded-xl mx-1">
-        <Carousel indicators={false} slide={false}>
+      <div className="h-56 sm:h-64 xl:h-80 2xl:h-96 border-y-2 border-gray-300 mx-1">
+        <Carousel indicators={false} slideInterval={3000}>
           {sliders.map((slide) => {
             return (
               <div
                 key={slide.id}
                 className="flex flex-col lg:flex-row h-full items-center justify-around"
               >
-                <div className="lg:w-[350px] lg:h-[200px] w-[150px] h-[100px] border-1 p-2 rounded bg-clip-border border-transparent bg-gradient-to-r from-gray-500 to-orange-400">
+                <div className="lg:w-[350px] lg:h-[200px] w-[150px] h-[100px] border-1 p-1 lg:p-2 rounded bg-clip-border border-transparent bg-gradient-to-r from-gray-500 to-orange-400">
                   <Image
                     src={slide.imgSrc}
                     alt={`${slide.title}`}
@@ -58,7 +58,7 @@ function ServiceSlider() {
                     }}
                   />
                 </div>
-                <div className="flex flex-row items-start max-sm:flex-col lg:flex-col gap-2 ">
+                <div className="flex flex-row items-start max-sm:justify-center max-sm:items-center max-sm:flex-col lg:flex-col gap-2 ">
                   <h5 className="text-white font-bold text-sm md:text-xl underline">
                     {slide.title}
                   </h5>
