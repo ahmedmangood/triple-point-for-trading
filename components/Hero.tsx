@@ -9,7 +9,7 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className={`relative padding_container bg-gradient-to-r from-primary-color to-secondary-color border-b-2 border-black h-[100vh]`}
+      className={`relative padding_container bg-gradient-to-r from-primary-color to-secondary-color border-b-2 border-black `}
     >
       <div className="relative z-[2] flex flex-col items-center justify-center lg:flex-row py-28">
         <div
@@ -31,7 +31,7 @@ const Hero = () => {
           width={800}
           height={400}
           loading="lazy"
-          className="w-[600px] h-auto max-md:w-full imageBlur;"
+          className="w-[600px] h-auto max-md:w-full max-sm:hidden imageBlur"
         />
       </div>
       <div className="heroBackground"></div>
