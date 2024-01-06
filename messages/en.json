@@ -1,0 +1,23 @@
+{
+  "Navbar_Links": {
+    "home": "Home",
+    "services": "Services",
+    "about-us": "About Us",
+    "contact-us": "Contact Us"
+  },
+  "Hompage": {
+    "hero-title": "Experienced information technology and communication solutions",
+    "hero-paragraph": "we strive to provide Our customers with cutting-edge, rules-oriented solutions and visually activated to meet communication needs",
+    "contact-btn": "Contact Us"
+  },
+  "AboutUs": {
+    "title-one": "What’s LOS Academy ?",
+    "paragraph-one": "Language of Science Academy is an online learning platform focused on providing comprehensive Arabic language education, along with quality Islamic knowledge courses. Our mission is to make the study of Arabic and Islamic topics accessible to anyone in the world through remote learning technology.",
+    "title-two": "Why choose us ?",
+    "paragraph-two": "We understand the unique needs and learning styles of children. Our website offers age-appropriate content, engaging activities, and interactive materials to make the learning process enjoyable and accessible for kids."
+  },
+  "Footer": {
+    "footer-title": "All Rights received - Codegate©2023",
+    "footer-follow": "Follow us on"
+  }
+}
