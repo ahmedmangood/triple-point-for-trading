@@ -15,13 +15,7 @@ function ContactUs() {
             {"test"}
           </span>
         </div>
-        <PrimaryButton
-          text={"click"}
-          ourStyle="bg-secondary-color hover:bg-secondary-hover text-sm font-semibold transition-colors text-white shadow-[0px_4px_10px_0px_rgba(0,0,0,0.25)] w-52 h-12 my-auto px-16 shadow rounded-full"
-          onClick={() => {
-            location.href = "https://wa.me/+201000000000";
-          }}
-        />
+        <PrimaryButton title={"click"} />
       </div>
     </section>
   );
