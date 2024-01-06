@@ -1,7 +1,6 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import PlanCard from "./PlanCard";
 import OurTab from "./OurTab";
 
 function Plans() {
