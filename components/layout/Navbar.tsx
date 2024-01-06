@@ -23,7 +23,7 @@ export default function CustomNavbar() {
   const customNavTheme: CustomFlowbiteTheme["navbar"] = {
     root: {
       inner: {
-        base: "flex flex-row justify-between flex-wrap items-center px-2",
+        base: "flex flex-row justify-between flex-wrap items-center px-2 ",
         fluid: {
           off: "",
           on: "",
@@ -55,7 +55,7 @@ export default function CustomNavbar() {
       <Navbar
         rounded={true}
         theme={customNavTheme.root}
-        className="fixed w-full top-0 z-10 border-b-2 border-orange-color-hover h-14"
+        className="fixed w-full top-0 z-10 border-b-2 border-orange-color-hover h-14 rounded-[0px]"
       >
         <Navbar.Brand
           href="/"
@@ -91,7 +91,7 @@ export default function CustomNavbar() {
         </Navbar.Collapse>
         <div
           className={
-            "flex items-center max-md:items-baseline gap-2 rtl:font-sans rtl:text-lg rtl:max-sm:me-0 rtl:max-sm:ms-auto rtl:lg:w-[185px]"
+            "bg-white flex items-center max-md:items-baseline gap-2 rtl:font-sans rtl:text-lg rtl:max-sm:me-0 rtl:max-sm:ms-auto rtl:lg:w-[185px]"
           }
         >
           <Navbar.Toggle theme={customNavTheme.toggle} />

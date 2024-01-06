@@ -43,7 +43,7 @@ html {
   @apply px-2 md:px-10 lg:px-14;
 }
 .imageBlur {
-  background-image: url("/imgs/blur.svg");
+  background-image: url("/imgs/Ellipse4.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;

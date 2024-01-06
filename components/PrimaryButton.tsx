@@ -9,7 +9,7 @@ interface PrimaryButtonProps {
 const PrimaryButton = ({ title, ourStyle, action }: PrimaryButtonProps) => {
   return (
     <button
-      className={`bg-orange-color hover:bg-orange-color-hover text-sm font-semibold transition-colors text-white py-2.5 px-12 shadow rounded-xl w-50 mx-auto mt-5 ${ourStyle}`}
+      className={`border-2 border-orange-color hover:bg-orange-color text-sm font-semibold transition-colors text-white py-3 px-14 shadow rounded-xl mx-auto mt-5 mb-3 ${ourStyle}`}
       onClick={action}
     >
       {title}
