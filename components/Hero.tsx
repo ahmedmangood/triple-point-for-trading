@@ -9,7 +9,7 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className={`relative padding_container bg-gradient-to-r from-primary-color to-secondary-color border-b-2 border-black `}
+      className={`relative padding_container bg-gradient-to-r from-primary-color to-secondary-color border-b-2 border-gray-200 `}
     >
       <div className="relative z-[2] flex flex-col items-center justify-center lg:flex-row py-28">
         <div

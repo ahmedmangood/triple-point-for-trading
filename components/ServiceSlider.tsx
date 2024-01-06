@@ -21,7 +21,7 @@ function ServiceSlider() {
       title: "Networking",
       imgSrc: "/imgs/netwroking.png",
       description:
-        "It is the linking of the various devices and systems in the home together so that You can control them all from anywhere, and there are reliable devices The smart home system ..",
+        "It is the linking of the various devices and systems in the home together so that You can control them all from anywhere, ..",
     },
     {
       id: 3,
@@ -45,7 +45,7 @@ function ServiceSlider() {
                 key={slide.id}
                 className="flex flex-col lg:flex-row h-full items-center justify-around"
               >
-                <div className="lg:w-[200px] lg:h-[150px] w-[150px] h-[100px] border-2 border-gray-50 p-1 rounded bg-clip-border border-transparent bg-gradient-to-r from-gray-500 to-orange-400">
+                <div className="lg:w-[350px] lg:h-[200px] w-[150px] h-[100px] border-1 p-2 rounded bg-clip-border border-transparent bg-gradient-to-r from-gray-500 to-orange-400">
                   <Image
                     src={slide.imgSrc}
                     alt={`${slide.title}`}
@@ -62,7 +62,7 @@ function ServiceSlider() {
                   <h5 className="text-white font-bold text-sm md:text-xl underline">
                     {slide.title}
                   </h5>
-                  <p className="w-[260px] pt-2 lg:pt-0 text-xs md:text-sm bg-clip-text text-transparent bg-gradient-to-r from-gray-500 to-orange-400">
+                  <p className="w-[260px] pt-2 lg:pt-0 max-sm:pt-0 text-xs md:text-sm bg-clip-text text-transparent bg-gradient-to-r from-gray-500 to-orange-400">
                     {slide.description}
                   </p>
                 </div>
