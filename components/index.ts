@@ -4,5 +4,13 @@ import Hero from "./Hero";
 import PrimaryButton from "./PrimaryButton";
 import AboutUs from "./Aboutus";
 import ContactUs from "./ContactUs";
-
-export { CustomNavbar, ContactUs, PrimaryButton, Footer, Hero, AboutUs };
+import ServiceSlider from "./ServiceSlider";
+export {
+  CustomNavbar,
+  ServiceSlider,
+  ContactUs,
+  PrimaryButton,
+  Footer,
+  Hero,
+  AboutUs,
+};

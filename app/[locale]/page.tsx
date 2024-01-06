@@ -1,6 +1,5 @@
-import { AboutUs, ContactUs, Hero } from "@/components";
+import { AboutUs, ContactUs, Hero, ServiceSlider } from "@/components";
 import Plans from "@/components/Plans";
-import TrySection from "@/components/TrySection";
 import { useTranslations } from "next-intl";
 import { unstable_setRequestLocale } from "next-intl/server";
 
@@ -16,7 +15,7 @@ export default function Home({
   return (
     <main className="min-h-screen">
       <Hero />
-      {/* <TrySection /> */}
+      <ServiceSlider />
       {/* <OurCourses /> */}
       <AboutUs />
       <Plans />
