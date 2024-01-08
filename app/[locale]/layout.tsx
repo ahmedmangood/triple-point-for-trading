@@ -1,5 +1,7 @@
 import "../globals.css";
 import "aos/dist/aos.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 import type { Metadata } from "next";
 import { Noto_Kufi_Arabic, Poppins } from "next/font/google";

@@ -8,7 +8,7 @@ const Hero = () => {
 
   return (
     <section
-      id="hero"
+      id="home"
       className={`h-screen relative padding_container bg-gradient-to-r from-[#252B42] to-primary-color border-b-2 border-gray-200 `}
     >
       <div className="relative z-[2] flex flex-col items-center justify-center lg:flex-row pt-60 lg:pt-60 my-auto">

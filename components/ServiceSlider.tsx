@@ -1,9 +1,10 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import PrimaryButton from "./PrimaryButton";
 import { Carousel } from "flowbite-react";
 import Image from "next/image";
+import Slider from "react-slick";
+import ServiceCard from "./ServiceCard";
 
 function ServiceSlider() {
   const t = useTranslations("Hompage");
@@ -89,9 +90,18 @@ function ServiceSlider() {
     },
   ];
 
+  const settings = {
+    dots: false,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    cssEase: "linear",
+  };
+
   return (
-    <section className="h-screen bg-[#252B42] pb-2">
-      <h2 className="text-center font-bold text-xl pt-10 pb-2 lg:text-3xl text-orange-400">
+    <section className="h-screen bg-[#252B42] pb-2" id="services">
+      <h2 className="text-center font-bold text-xl pt-32 pb-2 lg:text-3xl text-orange-400">
         {t2("services-title")}
       </h2>
       <div className="flex items-center justify-center pb-8">
@@ -113,38 +123,18 @@ function ServiceSlider() {
         </svg>
       </div>
       <div className="h-80 border-y-2 border-gray-300 mx-1">
-        <Carousel indicators={false} slideInterval={3000}>
+        <Slider {...settings}>
           {sliders.map((slide) => {
             return (
-              <div
+              <ServiceCard
+                src={slide.imgSrc}
+                title={slide.title}
+                description={slide.description}
                 key={slide.id}
-                className="flex flex-col lg:flex-row h-full items-center justify-around"
-              >
-                <div className="lg:w-[350px] lg:h-[200px] w-[150px] h-[100px] border-1 p-1 lg:p-2 rounded bg-clip-border border-transparent bg-gradient-to-r from-gray-500 to-orange-400">
-                  <Image
-                    src={slide.imgSrc}
-                    alt={`${slide.title}`}
-                    width={200}
-                    height={200}
-                    loading="lazy"
-                    style={{
-                      width: "100%",
-                      height: "100%",
-                    }}
-                  />
-                </div>
-                <div className="flex flex-row items-start max-sm:justify-center max-sm:items-center max-sm:flex-col lg:flex-col gap-2 ">
-                  <h5 className="text-white font-bold text-sm md:text-xl underline">
-                    {slide.title}
-                  </h5>
-                  <p className="w-[260px] pt-2 lg:pt-0 max-sm:pt-0 text-xs md:text-sm bg-clip-text text-transparent bg-gradient-to-r from-gray-500 to-orange-400">
-                    {slide.description}
-                  </p>
-                </div>
-              </div>
+              />
             );
           })}
-        </Carousel>
+        </Slider>
       </div>
     </section>
   );

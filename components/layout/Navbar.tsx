@@ -31,7 +31,7 @@ export default function CustomNavbar() {
       },
     },
     collapse: {
-      base: "w-full lg:block lg:w-auto rtl:xl:block bg-white shadow-xl lg:shadow-none lg:bg-transparent lis_list ",
+      base: "w-full lg:block lg:w-auto rtl:xl:block bg-[#545a6c] shadow-xl lg:shadow-none lg:bg-transparent lis_list ",
       list: "mt-4 flex flex-col lg:mt-0 lg:flex-row lg:space-x-8 lg:text-sm lg:font-medium gap-1 rtl:lg:space-x-3 rtl:gap-8",
       hidden: {
         on: "hidden",
@@ -39,7 +39,7 @@ export default function CustomNavbar() {
       },
     },
     toggle: {
-      base: "inline-flex items-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 lg:hidden rtl:xl:hidden rtl:mr-1",
+      base: "inline-flex items-center rounded-lg p-2 text-sm text-gray-800 bg-gray-600 hover:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-200 lg:hidden rtl:xl:hidden rtl:mr-1",
       icon: "h-6 w-6 shrink-0",
     },
     link: {
@@ -55,7 +55,7 @@ export default function CustomNavbar() {
       <Navbar
         rounded={true}
         theme={customNavTheme.root}
-        className="fixed w-full top-0 z-10 border-b-2 border-orange-color-hover h-14 rounded-[0px]"
+        className="bg-[#d8d8d84d] fixed w-full top-0 z-10 border-b-2 border-orange-color-hover h-16 rounded-[0px]"
       >
         <Navbar.Brand
           href="/"
@@ -91,13 +91,17 @@ export default function CustomNavbar() {
         </Navbar.Collapse>
         <div
           className={
-            "bg-white flex items-center max-md:items-baseline gap-2 rtl:font-sans rtl:text-lg rtl:max-sm:me-0 rtl:max-sm:ms-auto rtl:lg:w-[185px]"
+            "bg-[#d8d8d810] lg:bg-transparent py-1 flex items-center max-md:items-baseline gap-2 rtl:font-sans rtl:text-lg rtl:max-sm:me-0 rtl:max-sm:ms-auto rtl:lg:w-[185px]"
           }
         >
           <Navbar.Toggle theme={customNavTheme.toggle} />
-          <Dropdown label={<MdLanguage className="w-5 h-5" />} inline>
+          <Dropdown
+            label={<MdLanguage className="w-5 h-5" />}
+            inline
+            className="bg-[#d8d8d84d]"
+          >
             <Link locale="en" href={"/"}>
-              <Dropdown.Item className="rtl:flex-row-reverse ltr:flex-row">
+              <Dropdown.Item className="rtl:flex-row-reverse ltr:flex-row hover:bg-[#d8d8d84d]">
                 <Image
                   src={"/imgs/flags/en.svg"}
                   alt="en"
@@ -107,7 +111,7 @@ export default function CustomNavbar() {
               </Dropdown.Item>
             </Link>
             <Link locale="ar" href={"/"}>
-              <Dropdown.Item className="rtl:flex-row-reverse ltr:flex-row">
+              <Dropdown.Item className="rtl:flex-row-reverse ltr:flex-row hover:bg-[#d8d8d84d]">
                 <Image
                   src={"/imgs/flags/arab.svg"}
                   alt="ar"
