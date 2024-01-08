@@ -86,3 +86,6 @@ html {
     -webkit-text-stroke-color: rgba(255, 255, 255, 0.538);
   }
 }
+.slick-slider .slick-arrow {
+  display: none !important;
+}
