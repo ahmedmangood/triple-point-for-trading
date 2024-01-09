@@ -14,7 +14,7 @@ const Hero = () => {
       <div className="relative z-[2] flex flex-col items-center justify-center lg:flex-row pt-60 lg:pt-60 my-auto">
         <div
           data-aos="fade-up"
-          className="flex flex-col justify-center items-flex-start gap-3"
+          className="flex flex-col justify-center items-flex-start gap-3 rtl:px-2"
         >
           <h1 className="text-3xl font-bold lg:text-4xl leading-[1.2] rtl:leading-[1.4] capitalize bg-clip-text text-transparent bg-gradient-to-r from-white-color to-orange-color">
             {t("hero-title")}

@@ -16,10 +16,7 @@ export default function Home({
     <main className="min-h-screen">
       <Hero />
       <ServiceSlider />
-      {/* <OurCourses /> */}
       <AboutUs />
-      <Plans />
-      {/* <FeedBack /> */}
       <ContactUs />
     </main>
   );

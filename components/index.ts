@@ -5,6 +5,7 @@ import PrimaryButton from "./PrimaryButton";
 import AboutUs from "./Aboutus";
 import ContactUs from "./ContactUs";
 import ServiceSlider from "./ServiceSlider";
+
 export {
   CustomNavbar,
   ServiceSlider,

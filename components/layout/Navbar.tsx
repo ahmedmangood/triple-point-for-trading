@@ -55,7 +55,7 @@ export default function CustomNavbar() {
       <Navbar
         rounded={true}
         theme={customNavTheme.root}
-        className="bg-[#d8d8d84d] fixed w-full top-0 z-10 border-b-2 border-orange-color-hover h-16 rounded-[0px]"
+        className="bg-[#d8d8d84d] fixed w-full top-0 z-50 border-b-2 border-orange-color-hover h-16 rounded-[0px]"
       >
         <Navbar.Brand
           href="/"
@@ -91,7 +91,7 @@ export default function CustomNavbar() {
         </Navbar.Collapse>
         <div
           className={
-            "bg-[#d8d8d810] lg:bg-transparent py-1 flex items-center max-md:items-baseline gap-2 rtl:font-sans rtl:text-lg rtl:max-sm:me-0 rtl:max-sm:ms-auto rtl:lg:w-[185px]"
+            "bg-[#d8d8d82f] lg:bg-transparent py-1 px-1 rounded-md flex items-center max-md:items-baseline gap-2 rtl:font-sans rtl:text-lg rtl:max-sm:me-0 rtl:max-sm:ms-auto rtl:lg:w-[185px]"
           }
         >
           <Navbar.Toggle theme={customNavTheme.toggle} />
