@@ -8,7 +8,7 @@ function AboutUs() {
 
   return (
     <section
-      id="aboutUs"
+      id="about-us"
       className="relative  h-screen bg-gradient-to-r from-slate-500 to-primary-color border-t-2 border-white"
     >
       <div className="z-0 absolute opacity-40 top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] hidden md:block">
