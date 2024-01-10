@@ -161,7 +161,7 @@ function ServiceSlider() {
           alt="background"
         />
       </div>
-      <div className="h-full flex items-start justify-around gap-3 opacity-10 pt-3 pb-10 lg:hidden">
+      <div className="h-full overflow-hidden flex items-start justify-around gap-3 opacity-10 pt-3 pb-10 lg:hidden ">
         <Image
           src={"/imgs/Frame27.svg"}
           width={200}
