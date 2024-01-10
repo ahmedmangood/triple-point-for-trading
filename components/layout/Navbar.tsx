@@ -6,6 +6,7 @@ import { MdLanguage } from "react-icons/md";
 import Image from "next/image";
 import { Dropdown, Navbar } from "flowbite-react";
 import type { CustomFlowbiteTheme } from "flowbite-react";
+import { useState } from "react";
 export default function CustomNavbar() {
   const t = useTranslations("Navbar_Links");
   const navbarLinks = [
@@ -49,7 +50,11 @@ export default function CustomNavbar() {
       },
     },
   };
+  const [activeLink, setActiveLink] = useState<number>(1); // State to manage active link
 
+  const handleLinkClick = (id: number) => {
+    setActiveLink(id);
+  };
   return (
     <>
       <Navbar
@@ -83,7 +88,8 @@ export default function CustomNavbar() {
               key={link.id}
               href={link.href}
               theme={customNavTheme.link}
-              active={link.active}
+              active={activeLink === link.id} // Set active based on state
+              onClick={() => handleLinkClick(link.id)}
             >
               {link.title}
             </Navbar.Link>
