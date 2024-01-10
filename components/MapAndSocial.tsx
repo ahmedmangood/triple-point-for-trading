@@ -1,3 +1,4 @@
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import React from "react";
 import { FaFacebook, FaLinkedin, FaPhone, FaPhoneAlt } from "react-icons/fa";
@@ -5,6 +6,7 @@ import { HiLocationMarker } from "react-icons/hi";
 import { MdEmail } from "react-icons/md";
 
 function MapAndSocial() {
+  const t = useTranslations("Footer");
   return (
     <section className="flex flex-col  gap-20 pt-5 items-center m-auto justify-center text-gray-300">
       <div className="relative w-full flex items-center justify-center px-5">
@@ -23,7 +25,7 @@ function MapAndSocial() {
       <div className="flex flex-col justify-center items-center gap-8 lg:flex-row m-auto px-5">
         <div className="flex flex-col items-center lg:flex-row gap-3">
           <div className="flex flex-col items-center justify-start gap-3">
-            <h6 className="font-bold">Follow us</h6>
+            <h6 className="font-bold">{t("footer-follow")}</h6>
             <div className="flex items-center justify-center gap-5">
               <FaFacebook style={{ fontSize: "20px" }} />
               <FaLinkedin style={{ fontSize: "20px" }} />
