@@ -5,7 +5,8 @@ import PrimaryButton from "./PrimaryButton";
 import AboutUs from "./Aboutus";
 import ContactUs from "./ContactUs";
 import ServiceSlider from "./ServiceSlider";
-
+import MapAndSocial from "./MapAndSocial";
+import LastFooter from "./LastFooter";
 export {
   CustomNavbar,
   ServiceSlider,
@@ -14,4 +15,6 @@ export {
   Footer,
   Hero,
   AboutUs,
+  MapAndSocial,
+  LastFooter,
 };
