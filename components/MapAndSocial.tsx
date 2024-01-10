@@ -19,7 +19,7 @@ function MapAndSocial() {
           }}
         />
       </div>
-      <div className="flex flex-col justify-center items-center gap-8 lg:flex-row m-auto">
+      <div className="flex flex-col justify-center items-center gap-8 lg:flex-row m-auto px-5">
         <div className="flex flex-col items-center lg:flex-row gap-3">
           <div className="flex flex-col items-center justify-start gap-3">
             <h6 className="font-bold">Follow us</h6>
@@ -37,7 +37,7 @@ function MapAndSocial() {
           <span className="hidden w-[1px] h-[102.005px] bg-gray-400 lg:block mx-5"></span>
           <span className="w-[200px] h-[2px] bg-slate-300 lg:hidden"></span>
         </div>
-        <div className="flex flex-col items-center justify-center lg:flex-row gap-3">
+        <div className="flex flex-col items-center justify-center lg:flex-row gap-3 ">
           <HiLocationMarker style={{ fontSize: "20px" }} />
           <span className="text-slate-300 text-center">
             Riyadh-Olayaa street - Al Rosis Building - Showroom 14
