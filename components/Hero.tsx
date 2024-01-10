@@ -5,7 +5,9 @@ import { useTranslations } from "next-intl";
 import { PrimaryButton } from ".";
 const Hero = () => {
   const t = useTranslations("Hompage");
-
+  const contactWithWhatsApp = () => {
+    location.href = "https://wa.me/0541301200";
+  };
   return (
     <section
       id="home"
@@ -22,7 +24,10 @@ const Hero = () => {
           <p className="text-base md:text-xl lg:text-2xl font-normal text-gray-200">
             {t("hero-paragraph")}
           </p>
-          <PrimaryButton title={t("contact-btn")} />
+          <PrimaryButton
+            title={t("contact-btn")}
+            action={contactWithWhatsApp}
+          />
         </div>
         <div
           className="lg:flex items-center justify-center hidden lg:w-[100%]"
