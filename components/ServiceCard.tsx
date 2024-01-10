@@ -1,6 +1,12 @@
-import React from "react";
+"use client";
+
 import Image from "next/image";
-function ServiceCard({ src, title, description }: any) {
+interface ServiceCardProps {
+  src: string;
+  title: string;
+  description: string;
+}
+function ServiceCard({ src, title, description }: ServiceCardProps) {
   return (
     <div className="flex flex-col lg:flex-row h-full items-center justify-around py-5 gap-5 lg:gap-3">
       <div className=" w-[200px] h-[130px] md:w-[250px] md:h-[130px] lg:w-[400px] lg:h-[250px] border-1 p-1 lg:p-2 rounded bg-clip-border border-transparent bg-gradient-to-r from-gray-500 to-orange-400">
@@ -10,10 +16,13 @@ function ServiceCard({ src, title, description }: any) {
           width={200}
           height={200}
           loading="lazy"
+          placeholder="blur"
+          blurDataURL="/imgs/Ellipse1.svg"
           style={{
             width: "100%",
             height: "100%",
           }}
+          quality={100}
         />
       </div>
       <div className="flex flex-col items-start justify-center lg:flex-col gap-2 rtl:items-end">

@@ -1,10 +1,9 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { Carousel } from "flowbite-react";
-import Image from "next/image";
 import Slider from "react-slick";
 import ServiceCard from "./ServiceCard";
+import Image from "next/image";
 
 function ServiceSlider() {
   const t = useTranslations("Hompage");
@@ -13,73 +12,73 @@ function ServiceSlider() {
     {
       id: 1,
       title: t2("SmartHome-title"),
-      imgSrc: "/imgs/slide3.jpg",
+      imgSrc: "/services/service-13.jpg",
       description: t2("SmartHome-desc"),
     },
     {
       id: 2,
       title: t2("DataRoom-title"),
-      imgSrc: "/imgs/slide1.jpg",
+      imgSrc: "/services/service-11.jpg",
       description: t2("DataRoom-desc"),
     },
     {
       id: 3,
       title: t2("SystemNumbering-title"),
-      imgSrc: "/imgs/slide3.jpg",
+      imgSrc: "/services/service-2.jpg",
       description: t2("SystemNumbering-desc"),
     },
     {
       id: 4,
       title: t2("AccessControl-title"),
-      imgSrc: "/imgs/slide3.jpg",
+      imgSrc: "/services/service-3.jpg",
       description: t2("AccessControl-desc"),
     },
     {
       id: 5,
       title: t2("CCTVSystem-title"),
-      imgSrc: "/imgs/slide3.jpg",
+      imgSrc: "/services/service-4.jpg",
       description: t2("CCTVSystem-desc"),
     },
     {
       id: 6,
       title: t2("IntercomeSystem-title"),
-      imgSrc: "/imgs/slide3.jpg",
+      imgSrc: "/services/service-5.png",
       description: t2("IntercomeSystem-desc"),
     },
     {
       id: 7,
       title: t2("SystemSecurity-title"),
-      imgSrc: "/imgs/slide3.jpg",
+      imgSrc: "/services/service-6.jpg",
       description: t2("SystemSecurity-desc"),
     },
     {
       id: 8,
       title: t2("CenteralModern-title"),
-      imgSrc: "/imgs/slide3.jpg",
+      imgSrc: "/services/service-7.jpg",
       description: t2("CenteralModern-desc"),
     },
     {
       id: 9,
       title: t2("ElectricalWorks-title"),
-      imgSrc: "/imgs/slide3.jpg",
+      imgSrc: "/services/electric.jpg",
       description: t2("ElectricalWorks-desc"),
     },
     {
       id: 10,
       title: t2("VideoDisplayWalls-title"),
-      imgSrc: "/imgs/slide3.jpg",
+      imgSrc: "/services/service-8.jpg",
       description: t2("VideoDisplayWalls-desc"),
     },
     {
       id: 11,
       title: t2("WebsitesAndMobileApps-title"),
-      imgSrc: "/imgs/slide3.jpg",
+      imgSrc: "/services/service-9.jpg",
       description: t2("WebsitesAndMobileApps-desc"),
     },
     {
       id: 12,
       title: t2("AdvertismentAndMarketing-title"),
-      imgSrc: "/imgs/slide3.jpg",
+      imgSrc: "/services/service-10.jpg",
       description: t2("AdvertismentAndMarketing-desc"),
     },
   ];
@@ -129,6 +128,52 @@ function ServiceSlider() {
             );
           })}
         </Slider>
+      </div>
+      <div className="h-full lg:flex items-start justify-around opacity-10 pt-3 pb-10 hidden">
+        <Image
+          src={"/imgs/Frame27.svg"}
+          width={200}
+          height={200}
+          alt="background"
+        />
+        <Image
+          src={"/imgs/Frame27.svg"}
+          width={200}
+          height={200}
+          alt="background"
+        />
+        <Image
+          src={"/imgs/Frame27.svg"}
+          width={200}
+          height={200}
+          alt="background"
+        />
+        <Image
+          src={"/imgs/Frame27.svg"}
+          width={200}
+          height={200}
+          alt="background"
+        />
+        <Image
+          src={"/imgs/Frame27.svg"}
+          width={200}
+          height={200}
+          alt="background"
+        />
+      </div>
+      <div className="h-full flex items-start justify-around gap-3 opacity-10 pt-3 pb-10 lg:hidden">
+        <Image
+          src={"/imgs/Frame27.svg"}
+          width={200}
+          height={200}
+          alt="background"
+        />
+        <Image
+          src={"/imgs/Frame27.svg"}
+          width={200}
+          height={200}
+          alt="background"
+        />
       </div>
     </section>
   );
