@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import { FaFacebook, FaLinkedin, FaPhone, FaPhoneAlt } from "react-icons/fa";
 import { HiLocationMarker } from "react-icons/hi";
+import { MdEmail } from "react-icons/md";
 
 function MapAndSocial() {
   return (
@@ -34,6 +35,12 @@ function MapAndSocial() {
         <div className="flex flex-col items-center justify-center lg:flex-row gap-3">
           <FaPhoneAlt style={{ fontSize: "20px" }} />
           <span className="text-slate-300">0541301200 - 0547341541</span>
+          <span className="hidden w-[1px] h-[102.005px] bg-gray-400 lg:block mx-5"></span>
+          <span className="w-[200px] h-[2px] bg-slate-300 lg:hidden"></span>
+        </div>
+        <div className="flex flex-col items-center justify-center lg:flex-row gap-3">
+          <MdEmail style={{ fontSize: "20px" }} />
+          <span className="text-slate-300">info@triplepointsa.com</span>
           <span className="hidden w-[1px] h-[102.005px] bg-gray-400 lg:block mx-5"></span>
           <span className="w-[200px] h-[2px] bg-slate-300 lg:hidden"></span>
         </div>
