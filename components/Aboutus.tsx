@@ -43,13 +43,23 @@ function AboutUs() {
           <p className="font-bold">{t("paragraph-one")}</p>
           <p>{t("paragraph-two")}</p>
         </div>
-        <div data-aos="zoom-in" className="lg:hidden block">
+        <div
+          data-aos="zoom-in"
+          className="relative  md:hidden flex items-center justify-center my-3"
+        >
           <Image
             src="/imgs/Frame15.svg"
             width={200}
             height={200}
-            className=""
+            className="z-20 relative"
             alt="frame"
+          />
+          <Image
+            src="/imgs/Vector.svg"
+            width={150}
+            height={150}
+            alt="frame"
+            className="absolute z-10"
           />
         </div>
       </div>
