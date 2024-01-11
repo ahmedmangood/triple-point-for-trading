@@ -80,7 +80,10 @@ function ContactUs() {
       className="h-screen bg-gradient-to-r from-primary-color to-slate-500 border-t-2 border-white"
     >
       <div className="pt-10 pb-5">
-        <h3 className="bg-clip-text text-transparent bg-gradient-to-r from-neutral-500 to-neutral-400 text-center text-3xl md:text-6xl font-bold rtl:py-2">
+        <h3
+          data-aos="fade-up-right"
+          className="bg-clip-text text-transparent bg-gradient-to-r from-neutral-500 to-neutral-400 text-center text-3xl md:text-6xl font-bold rtl:py-2"
+        >
           {t("title")}
         </h3>
         <hr
@@ -93,7 +96,12 @@ function ContactUs() {
         />
       </div>
 
-      <form className="w-full h-full" ref={form} onSubmit={sendFormData}>
+      <form
+        data-aos="fade-up-left"
+        className="w-full h-full"
+        ref={form}
+        onSubmit={sendFormData}
+      >
         <div className="flex flex-col justify-center items-center gap-3 border-2 border-white rounded-xl mx-5 px-2 lg:p-6">
           <h5 className="font-bold bg-clip-text text-transparent bg-gradient-to-r from-neutral-400 to-neutral-300 text-center py-6 text-lg md:text-xl">
             {t("form-title")}
@@ -171,7 +179,7 @@ function ContactUs() {
               onChange={(e) => setMessage(e.target.value)}
             />
           </div>{" "}
-          <div className="flex justify-center items-center gap-4">
+          <div className="flex flex-col md:flex-row justify-center items-center gap-4">
             <PrimaryButton
               title={t("form-btn")}
               ourStyle="text-[20px] border-1 border-white hover:bg-white hover:text-gray-700 flex items-center justify-center gap-2"

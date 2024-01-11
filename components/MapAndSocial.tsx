@@ -15,7 +15,10 @@ function MapAndSocial() {
   const t = useTranslations("Footer");
   return (
     <section className="flex flex-col  gap-20 pt-5 items-center m-auto justify-center text-gray-300">
-      <div className="relative w-full flex items-center justify-center px-5">
+      <div
+        data-aos="zoom-out-right"
+        className="relative w-full flex items-center justify-center px-5"
+      >
         <Image
           src={"/imgs/map.svg"}
           alt="map"
@@ -28,7 +31,10 @@ function MapAndSocial() {
           }}
         />
       </div>
-      <div className="flex flex-col justify-center items-center gap-8 lg:flex-row m-auto px-5">
+      <div
+        data-aos="zoom-out-left"
+        className="flex flex-col justify-center items-center gap-8 lg:flex-row m-auto px-5"
+      >
         <div className="flex flex-col items-center lg:flex-row gap-3">
           <div className="flex flex-col items-center justify-start gap-3">
             <h6 className="font-bold">{t("footer-follow")}</h6>

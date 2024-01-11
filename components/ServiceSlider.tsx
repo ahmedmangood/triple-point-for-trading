@@ -140,10 +140,16 @@ function ServiceSlider() {
 
   return (
     <section className="h-screen bg-[#252B42] pb-2" id="services">
-      <h2 className="text-center font-bold text-xl pt-20 pb-2 lg:text-3xl text-orange-400">
+      <h2
+        data-aos="zoom-in-right"
+        className="text-center font-bold text-xl pt-20 pb-2 lg:text-3xl text-orange-400"
+      >
         {t2("services-title")}
       </h2>
-      <div className="flex items-center justify-center pb-8">
+      <div
+        data-aos="zoom-in-left"
+        className="flex items-center justify-center pb-8"
+      >
         <svg
           className="flex justify-center items-center"
           xmlns="http://www.w3.org/2000/svg"
@@ -161,7 +167,10 @@ function ServiceSlider() {
           />
         </svg>
       </div>
-      <div className="relative z-10 h-80 border-y-2 border-gray-300 mx-1">
+      <div
+        data-aos="zoom-in-down"
+        className="relative z-10 h-80 border-y-2 border-gray-300 mx-1"
+      >
         <Slider {...settings}>
           {sliders.map((slide) => {
             return (
@@ -175,7 +184,10 @@ function ServiceSlider() {
           })}
         </Slider>
       </div>
-      <div className=" flex items-center justify-center my-auto">
+      <div
+        data-aos="zoom-in-up"
+        className=" flex items-center justify-center my-auto"
+      >
         <div className="sliderBg w-full h-full absolute z-0 overflow-hidden"></div>
         <div className="w-full overflow-hidden flex items-center justify-center max-sm:gap-2 max-md:gap-20 md:gap-32 my-5 lg:my-3 lg:flex-row px-3">
           {featchers.map((featcher) => {

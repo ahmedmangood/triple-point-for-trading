@@ -28,7 +28,10 @@ function AboutUs() {
       </div>
       <div className="relative z-10 flex flex-col px-4 md:px-8 justify-center items center gap-10 lg:flex-row lg:gap-10 top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
         <div className="flex flex-col items-start justify-center">
-          <h4 className="font-bold responsiveText bg-clip-text text-transparent bg-gradient-to-r from-gray-400 to-gray-200">
+          <h4
+            data-aos="fade-down"
+            className="font-bold responsiveText bg-clip-text text-transparent bg-gradient-to-r from-gray-400 to-gray-200"
+          >
             {t("title")}
           </h4>
           <hr style={{ width: "200px", borderTopWidth: "3px" }} />
@@ -39,6 +42,15 @@ function AboutUs() {
         >
           <p className="font-bold">{t("paragraph-one")}</p>
           <p>{t("paragraph-two")}</p>
+        </div>
+        <div data-aos="zoom-in" className="lg:hidden block">
+          <Image
+            src="/imgs/Frame15.svg"
+            width={200}
+            height={200}
+            className=""
+            alt="frame"
+          />
         </div>
       </div>
     </section>
