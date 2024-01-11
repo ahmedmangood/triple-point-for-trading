@@ -177,7 +177,7 @@ function ServiceSlider() {
       </div>
       <div className=" flex items-center justify-center my-auto">
         <div className="sliderBg w-full h-full absolute z-0 overflow-hidden"></div>
-        <div className="w-full overflow-hidden flex items-center max-md:justify-center max-sm:gap-2 max-md:gap-20 md:gap-52 md:justify-between my-5 lg:my-3 lg:flex-row px-3">
+        <div className="w-full overflow-hidden flex items-center justify-center max-sm:gap-2 max-md:gap-20 md:gap-32 my-5 lg:my-3 lg:flex-row px-3">
           {featchers.map((featcher) => {
             return (
               <div
