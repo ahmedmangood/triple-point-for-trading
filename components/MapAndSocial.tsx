@@ -1,7 +1,13 @@
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import React from "react";
-import { FaFacebook, FaLinkedin, FaPhone, FaPhoneAlt } from "react-icons/fa";
+import {
+  FaFacebook,
+  FaFacebookSquare,
+  FaLinkedin,
+  FaPhone,
+  FaPhoneAlt,
+} from "react-icons/fa";
 import { HiLocationMarker } from "react-icons/hi";
 import { MdEmail } from "react-icons/md";
 
@@ -27,7 +33,7 @@ function MapAndSocial() {
           <div className="flex flex-col items-center justify-start gap-3">
             <h6 className="font-bold">{t("footer-follow")}</h6>
             <div className="flex items-center justify-center gap-5">
-              <FaFacebook style={{ fontSize: "20px" }} />
+              <FaFacebookSquare style={{ fontSize: "20px" }} />
               <FaLinkedin style={{ fontSize: "20px" }} />
             </div>
           </div>

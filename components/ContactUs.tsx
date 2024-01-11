@@ -2,6 +2,8 @@
 
 import { useRef, useState } from "react";
 import { PrimaryButton } from ".";
+import { RiSendPlaneFill } from "react-icons/ri";
+
 import emailjs from "@emailjs/browser";
 
 import {
@@ -35,7 +37,7 @@ function ContactUs() {
   };
   const textareaTheme: CustomFlowbiteTheme["textarea"] = {
     colors: {
-      gray: "bg-gray-50 border-gray-500 text-gray-900 focus:border-gray-100 focus:ring-gray-100",
+      gray: "resize-none bg-gray-50 border-gray-500 text-gray-900 focus:border-gray-100 focus:ring-gray-100",
     },
   };
 
@@ -92,7 +94,7 @@ function ContactUs() {
       </div>
 
       <form className="w-full h-full" ref={form} onSubmit={sendFormData}>
-        <div className="flex flex-col justify-center items-center gap-3 border-2 border-white rounded-xl mx-5 p-3 lg:p-6">
+        <div className="flex flex-col justify-center items-center gap-3 border-2 border-white rounded-xl mx-5 lg:p-6">
           <h5 className="font-bold bg-clip-text text-transparent bg-gradient-to-r from-neutral-400 to-neutral-300 text-center py-6 text-lg md:text-xl">
             {t("form-title")}
           </h5>
@@ -113,7 +115,7 @@ function ContactUs() {
                 icon={FaUser}
                 rightIcon={FaUser}
                 required
-                placeholder="name@example.com"
+                placeholder="name"
                 style={{
                   backgroundColor: "transparent !important",
                 }}
@@ -172,7 +174,8 @@ function ContactUs() {
           <div className="flex justify-center items-center gap-4">
             <PrimaryButton
               title={t("form-btn")}
-              ourStyle="text-[20px] border-1 border-white hover:bg-white hover:text-gray-700"
+              ourStyle="text-[20px] border-1 border-white hover:bg-white hover:text-gray-700 flex items-center justify-center gap-2"
+              icon={<RiSendPlaneFill style={{ fontSize: "20px" }} />}
             />
             {success && (
               <Toast className="text-green-400 bg-transparent border-2 border-green-500">

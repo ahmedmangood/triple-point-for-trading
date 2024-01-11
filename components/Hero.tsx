@@ -3,11 +3,10 @@
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { PrimaryButton } from ".";
+import Link from "next/link";
+import { FaWhatsapp } from "react-icons/fa";
 const Hero = () => {
   const t = useTranslations("Hompage");
-  const contactWithWhatsApp = () => {
-    location.href = "https://wa.me/0541301200";
-  };
   return (
     <section
       id="home"
@@ -24,10 +23,14 @@ const Hero = () => {
           <p className="text-base md:text-xl lg:text-2xl font-normal text-gray-200">
             {t("hero-paragraph")}
           </p>
-          <PrimaryButton
-            title={t("contact-btn")}
-            action={contactWithWhatsApp}
-          />
+          <Link
+            className="border-2 border-orange-color hover:bg-orange-color text-sm font-semibold transition-colors text-white py-3 px-14 shadow rounded-xl mx-auto mt-5 mb-3 flex justify-center items-center gap-3"
+            href={"https://wa.me/0547341541"}
+            target="_blanck"
+          >
+            {t("contact-btn")}
+            <FaWhatsapp style={{ fontSize: "20px" }} />
+          </Link>
         </div>
         <div
           className="lg:flex items-center justify-center hidden lg:w-[100%]"
