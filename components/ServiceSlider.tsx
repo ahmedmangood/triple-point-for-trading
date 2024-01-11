@@ -3,8 +3,9 @@
 import { useTranslations } from "next-intl";
 import Slider from "react-slick";
 import ServiceCard from "./ServiceCard";
-import Image from "next/image";
-
+import { FaArrowTrendUp } from "react-icons/fa6";
+import { FaBrain } from "react-icons/fa";
+import { PiShieldCheckFill } from "react-icons/pi";
 function ServiceSlider() {
   const t = useTranslations("Hompage");
   const t2 = useTranslations("Services");
@@ -83,6 +84,51 @@ function ServiceSlider() {
     },
   ];
 
+  const featchers = [
+    {
+      id: 1,
+      icon: (
+        <FaBrain
+          style={{
+            border: "1px solid gray",
+            padding: "5px",
+            borderRadius: "50%",
+            fontSize: "40px",
+          }}
+        />
+      ),
+      title: "Innovation",
+    },
+    {
+      id: 2,
+      icon: (
+        <PiShieldCheckFill
+          style={{
+            border: "1px solid gray",
+            padding: "5px",
+            borderRadius: "50%",
+            fontSize: "40px",
+          }}
+        />
+      ),
+      title: "Quality",
+    },
+    {
+      id: 3,
+      icon: (
+        <FaArrowTrendUp
+          style={{
+            border: "1px solid gray",
+            padding: "5px",
+            borderRadius: "50%",
+            fontSize: "40px",
+          }}
+        />
+      ),
+      title: "Efficient",
+    },
+  ];
+
   const settings = {
     dots: false,
     infinite: true,
@@ -94,7 +140,7 @@ function ServiceSlider() {
 
   return (
     <section className="h-screen bg-[#252B42] pb-2" id="services">
-      <h2 className="text-center font-bold text-xl pt-32 pb-2 lg:text-3xl text-orange-400">
+      <h2 className="text-center font-bold text-xl pt-20 pb-2 lg:text-3xl text-orange-400">
         {t2("services-title")}
       </h2>
       <div className="flex items-center justify-center pb-8">
@@ -129,8 +175,21 @@ function ServiceSlider() {
           })}
         </Slider>
       </div>
-
-      <div className="sliderBg h-full"></div>
+      <div className="flex items-center justify-center my-auto">
+        <div className="flex items-center max-md:justify-center max-sm:gap-3 max-md:gap-20 md:gap-52 md:justify-between my-5 lg:my-3 lg:flex-row px-3">
+          {featchers.map((featcher) => {
+            return (
+              <div
+                key={featcher.id}
+                className="bg-transparent border-[1px] shadow-sm-light border-gray-500 text-gray-400 flex flex-col items-center justify-center p-5 rounded-[16px] w-[100px] gap-3"
+              >
+                {featcher.icon}
+                <h6>{featcher.title}</h6>
+              </div>
+            );
+          })}
+        </div>
+      </div>
     </section>
   );
 }
