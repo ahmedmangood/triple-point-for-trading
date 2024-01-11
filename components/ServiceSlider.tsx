@@ -161,7 +161,7 @@ function ServiceSlider() {
           />
         </svg>
       </div>
-      <div className="h-80 border-y-2 border-gray-300 mx-1">
+      <div className="relative z-10 h-80 border-y-2 border-gray-300 mx-1">
         <Slider {...settings}>
           {sliders.map((slide) => {
             return (
@@ -175,8 +175,9 @@ function ServiceSlider() {
           })}
         </Slider>
       </div>
-      <div className="flex items-center justify-center my-auto">
-        <div className="flex items-center max-md:justify-center max-sm:gap-3 max-md:gap-20 md:gap-52 md:justify-between my-5 lg:my-3 lg:flex-row px-3">
+      <div className=" flex items-center justify-center my-auto">
+        <div className="sliderBg w-full h-full absolute z-0 overflow-hidden"></div>
+        <div className="w-full overflow-hidden flex items-center max-md:justify-center max-sm:gap-2 max-md:gap-20 md:gap-52 md:justify-between my-5 lg:my-3 lg:flex-row px-3">
           {featchers.map((featcher) => {
             return (
               <div
