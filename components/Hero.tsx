@@ -10,7 +10,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className={`h-screen relative padding_container bg-gradient-to-r from-[#252B42] to-primary-color border-b-2 border-gray-200 `}
+      className={`h-screen relative padding_container bg-gradient-to-r from-[#252B42] to-primary-color border-b-2 border-gray-200 overflow-hidden`}
     >
       <div className="relative z-[2] flex flex-col items-center justify-center lg:flex-row pt-44 md:pt-60 my-auto">
         <div

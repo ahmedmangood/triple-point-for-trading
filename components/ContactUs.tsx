@@ -77,7 +77,7 @@ function ContactUs() {
   return (
     <section
       id="contact-us"
-      className="h-screen bg-gradient-to-r from-primary-color to-slate-500 border-t-2 border-white"
+      className="h-screen bg-gradient-to-r from-primary-color to-slate-500 border-t-2 border-white  relative overflow-hidden"
     >
       <div className="pt-10 pb-5">
         <h3

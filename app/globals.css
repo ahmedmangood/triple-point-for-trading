@@ -42,6 +42,9 @@ html {
 .padding_container {
   @apply px-2 md:px-10 lg:px-14;
 }
+body > * {
+  overflow: hidden !important;
+}
 .imageBlur {
   background-image: url("/imgs/Ellipse4.png");
   background-size: contain;

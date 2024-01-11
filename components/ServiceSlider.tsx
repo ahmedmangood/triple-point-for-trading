@@ -139,7 +139,10 @@ function ServiceSlider() {
   };
 
   return (
-    <section className="h-screen bg-[#252B42] pb-2" id="services">
+    <section
+      className="h-screen bg-[#252B42] pb-2 relative overflow-hidden"
+      id="services"
+    >
       <h2
         data-aos="zoom-in-right"
         className="text-center font-bold text-xl pt-20 pb-2 lg:text-3xl text-orange-400"
