@@ -97,7 +97,7 @@ function ServiceSlider() {
           }}
         />
       ),
-      title: "Innovation",
+      title: t2("feature-one"),
     },
     {
       id: 2,
@@ -111,7 +111,7 @@ function ServiceSlider() {
           }}
         />
       ),
-      title: "Quality",
+      title: t2("feature-two"),
     },
     {
       id: 3,
@@ -125,7 +125,7 @@ function ServiceSlider() {
           }}
         />
       ),
-      title: "Efficient",
+      title: t2("feature-three"),
     },
   ];
 

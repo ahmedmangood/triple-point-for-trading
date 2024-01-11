@@ -29,7 +29,7 @@ function ServiceCard({ src, title, description }: ServiceCardProps) {
         <h5 className="text-white font-bold text-sm md:text-xl underline">
           {title}
         </h5>
-        <p className="w-[260px] pt-2 lg:pt-0 max-sm:pt-0 text-xs md:text-sm bg-clip-text text-transparent bg-gradient-to-r from-gray-500 to-orange-400 rtl:text-end">
+        <p className="w-[260px] pt-2 lg:pt-0 max-sm:pt-0 text-xs md:text-sm bg-clip-text text-transparent bg-gradient-to-r from-gray-500 to-orange-400 rtl:text-end rtl:text-base rtl:lg:text-[20px]">
           {description}
         </p>
       </div>

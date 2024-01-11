@@ -12,15 +12,15 @@ const Hero = () => {
       id="home"
       className={`h-screen relative padding_container bg-gradient-to-r from-[#252B42] to-primary-color border-b-2 border-gray-200 `}
     >
-      <div className="relative z-[2] flex flex-col items-center justify-center lg:flex-row pt-60 lg:pt-60 my-auto">
+      <div className="relative z-[2] flex flex-col items-center justify-center lg:flex-row pt-44 md:pt-60 my-auto">
         <div
           data-aos="fade-up"
           className="flex flex-col justify-center items-flex-start gap-3 rtl:px-2"
         >
-          <h1 className="text-3xl font-bold lg:text-4xl leading-[1.2] rtl:leading-[1.4] capitalize bg-clip-text text-transparent bg-gradient-to-r from-white-color to-orange-color">
+          <h1 className="text-4xl font-bold lg:text-4xl leading-[1.2] rtl:leading-[1.4] capitalize bg-clip-text text-transparent bg-gradient-to-r from-white-color to-orange-color">
             {t("hero-title")}
           </h1>
-          <p className="text-base md:text-xl lg:text-2xl font-normal text-gray-200">
+          <p className="text-lg md:text-xl lg:text-2xl font-normal text-gray-200">
             {t("hero-paragraph")}
           </p>
           <Link
